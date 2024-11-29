@@ -1,0 +1,68 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #004d40; /* Dark green */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Sticks to the top of the page */
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+/* Navbar Logo */
+.navbar-logo a {
+    color: #66bb6a; /* Light green */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-logo a:hover {
+    color: #a5d6a7; /* Softer green */
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem; /* Space between items */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
+    color: #ffffff; /* White text */
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Links */
+.navbar-links li a:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .navbar-links li a {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    }
+}

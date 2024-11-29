@@ -1,0 +1,139 @@
+/* General Background */
+.background-image {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile Wrapper */
+.profile-wrapper {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  animation: fadeInContent 0.5s ease-in-out;
+  box-shadow: 0 0px 30px #00796b
+}
+
+/* Profile Header */
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #2fd337;
+}
+
+.profile-header h2 {
+  font-size: 1.8rem;
+  margin: 5px 0;
+  color: #004d40;
+}
+
+.profile-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Profile Details */
+.profile-details p {
+  margin: 10px 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.edit-button,
+.logout-button {
+  background-color: #00796b;
+  color: white;
+}
+
+.edit-button:hover,
+.logout-button:hover {
+  background-color: #388e3c;
+}
+
+.save-button {
+  background-color: #00796b;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #388e3c;
+}
+
+.cancel-button {
+  background-color: #00796b;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #b71c1c;
+}
+
+.login-button,
+.register-button {
+  background-color: #00796b;
+  color: white;
+}
+
+.login-button:hover,
+.register-button:hover {
+  background-color: #388e3c;
+}
+
+.image-upload-container {
+  margin-top: 15px;
+}
+
+.image-upload-label {
+  display: inline-block;
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image-upload-label:hover {
+  background-color: #004d40;
+}
+
+.image-upload-input {
+  display: none; /* Hidden input field */
+}
+
+
+/* Animations */
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

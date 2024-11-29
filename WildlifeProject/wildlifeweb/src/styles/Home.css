@@ -1,0 +1,172 @@
+/* General Styles */
+.home-wrapper {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.content-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+  box-shadow: 0 2px 30px rgba(132, 202, 150, 0.897);
+
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  color: #004d40;
+  margin-bottom: 15px;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-btn {
+  background: #2fd337;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+/* Categories Section */
+.categories-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.categories-title {
+  font-size: 1.8rem;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  background: #9cee92;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  background: #2fd337;
+  color: white;
+}
+
+.category-name {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Wildlife Threats Section */
+.wildlife-threats-section, .sightings-section {
+  margin-bottom: 40px;
+}
+
+.section-title2 {
+  font-size: 1.8rem;
+  color: #1f4d00;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-image {
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-content p {
+  flex: 1;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Call to Action Section */
+.cta-section {
+  text-align: center;
+  padding: 20px;
+  background: #004d40;
+  color: white;
+  border-radius: 10px;
+}
+
+.cta-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  background: #2fd337;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background: #25a629;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

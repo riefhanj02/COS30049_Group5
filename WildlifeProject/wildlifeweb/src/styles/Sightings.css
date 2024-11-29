@@ -1,0 +1,190 @@
+/* General Layout */
+.sightings-wrapper {
+    background-size: contain;
+    background-position: center;
+    min-height: 200vh;
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: #fff;
+  }
+
+
+  .section-title {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    background: linear-gradient(135deg, rgba(24, 46, 70, 0.8), rgba(50, 117, 78, 0.8));
+    color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0 2px 30px rgba(132, 202, 150, 0.897);
+
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+
+  .hero-section h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px px rgba(0, 0, 0, 0.5);
+    color: #75db3a;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1.6;
+    color:#fff;
+  }
+  
+  /* Info Section */
+  .info-section {
+    text-align: center;
+  }
+  
+  .sightings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 10px;
+  }
+  
+  .sighting-card {
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .sighting-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .sighting-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 4px solid #00796b;
+  }
+  
+  .sighting-card h3 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+    color: #00796b;
+    font-weight: bold;
+  }
+  
+  .sighting-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Map Section */
+  
+  .map-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .map-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Call to Action Section */
+  .cta-section {
+    text-align: center;
+    background: #a2dbbb;
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cta-section p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .cta-button {
+    text-decoration: none;
+    font-weight: bold;
+    color: #005f56;
+    background: #ffeb3b;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #e0b700;
+    color: #fff;
+    transform: translateY(-3px);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2.4rem;
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  
+    .sightings-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+  
+    .cta-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  }
+  
